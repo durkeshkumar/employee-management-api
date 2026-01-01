@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: employee-api
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn EmployeeAPI.wsgi:application"
